@@ -30,8 +30,12 @@ received is an even number.
 HINT: Use the modulo operator (%) Google it! 😊
 ******************************************************************************/
 
-export const oddOrEven = () => {
-  //your code here
+export const oddOrEven = (x) => {
+  if (x % 2 === 0) {
+    return "Even"
+  } else {
+    return "Odd"
+  }
 };
 
 /******************************************************************************
