@@ -76,8 +76,23 @@ The function should return:
 
 ******************************************************************************/
 
-export const greeter = () => {
-  //your code here
+export const greeter = (x, y) => {
+  let name = x
+  let time = y
+  if (y < 0) {
+    return "Invalid time"
+  } else if (time > 0 && time <= 5) {
+    return `Good night ${name}`
+  } else if (time > 5 && time <= 11) {
+    return `Good morning ${name}`
+  } else if (time > 11 && time <= 17) {
+    return `Good day ${name}`
+  } else if (time > 17 && time <= 23) {
+    return `Good evening ${name}`
+  } else {
+    return "Invalid time"
+  }
+
 };
 
 /******************************************************************************
