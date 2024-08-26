@@ -197,8 +197,25 @@ Return "😎Primitive values only😎"
 
 ******************************************************************************/
 
-export function coolMaker() {
+export function coolMaker(parameter) {
   //your code here
+  let type = typeof parameter;
+  switch (type) {
+    case "number":
+      parameter = parameter * 2;
+      return `😎${String(parameter)}😎`;
+      break;
+    case "string":
+      return `😎${parameter}😎`;
+      break;
+    case "boolean":
+      if (parameter === true) {
+        return `😎Yeah😎`;
+      } else {
+        return `😎Chill😎`;
+      }
+      break;
+  }
 }
 
 /******************************************************************************
