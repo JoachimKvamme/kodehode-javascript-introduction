@@ -215,6 +215,9 @@ export function coolMaker(parameter) {
         return `😎Chill😎`;
       }
       break;
+    default:
+      return "😎Primitive values only😎"
+      break
   }
 }
 
