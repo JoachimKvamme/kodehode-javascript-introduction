@@ -16,9 +16,8 @@ Read the terminal output before and after to see the difference
 
 export function start() {
   //your code here
-  // return true
+  return true;
 };
-
 /******************************************************************************
 1.
 
