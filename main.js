@@ -224,6 +224,10 @@ Example3: (["One", "Two", "Three"], "Four") --> ["One", "Two", "Three", "Four"]
 Example4: (["One", "Two", "Three"], "Two") --> ["One", "Three"]
 ******************************************************************************/
 
-export const addOrRemove = () => {
-  //your code here
+export const addOrRemove = (array, string) => {
+  if (array.includes(string)) {
+    return array.splice(array.indexOf(string), 1);
+  } else if (!array.includes(string)) {
+    return array.push(string);
+  }
 };
