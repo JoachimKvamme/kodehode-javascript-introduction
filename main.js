@@ -133,8 +133,9 @@ Example3: "   hard        " should return "fun"
 
 ******************************************************************************/
 
-export const cleanAndFun = () => {
-  //your code here
+export const cleanAndFun = (text) => {
+  text = text.replace("hard", "fun").trim();
+  return text;
 };
 
 /******************************************************************************
