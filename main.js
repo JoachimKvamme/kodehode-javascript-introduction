@@ -158,8 +158,16 @@ Use array methods to do the following:
  Return the resulting array.
 ******************************************************************************/
 
-export function marvelEditor() {
+export function marvelEditor(array) {
   //your code here
+  array.splice(0,1);
+  array.splice(2, 1, "Skrull");
+  array.splice(0, 2, "Captain America");
+  return array.join("💪");
+  //return array.shift().replace("Doctor Strange", "Skrull").splice(1, 2, "Captain America").join("💪");
+  /*array.replace("Doctor Strange", "Skrull")
+  array.splice(1, 2, "Captain America")
+  array.join("💪")*/
 }
 
 /******************************************************************************
